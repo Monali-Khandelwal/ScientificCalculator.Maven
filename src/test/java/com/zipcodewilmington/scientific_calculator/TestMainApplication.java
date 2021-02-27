@@ -26,8 +26,13 @@ public class TestMainApplication {
     }
 
     @Test
-    public void division() {
+    public void division1() {
         Assertions.assertEquals(1 , CalculatorOperator.division(22, 22));
+    }
+
+    @Test
+    public void division2() {
+        Assertions.assertEquals(0, CalculatorOperator.division(9, 0));
     }
 
     @Test

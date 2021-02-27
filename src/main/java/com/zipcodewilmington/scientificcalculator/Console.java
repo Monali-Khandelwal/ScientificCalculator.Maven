@@ -18,23 +18,25 @@ public class Console {
     }
 
     public static String getStringInput(String prompt) {
+        prompt = "0"; // assigned Zero to Prompt variable before taking user input
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        String userInput = scanner.nextLine();
+        Console.println("Please enter the operator: ");
+        String userInput = scanner.nextLine(); // Read the operator from the user
         return userInput;
     }
 
     public static Integer getIntegerInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        int userInput = scanner.nextInt();
+        int userInput = scanner.nextInt(); // Read the first number from the user
         return userInput;
     }
 
     public static Double getDoubleInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        double userInput = scanner.nextDouble();
+        double userInput = scanner.nextDouble(); // Read the second number from the user
         return userInput;
     }
 }
