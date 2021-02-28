@@ -87,6 +87,7 @@ public class MainApplication {
                     Console.println(Double.toString(result));
                 case "help":
                     Console.helpDoc();
+                    break;
                 default:
                     Console.println("Invalid Command");
             }
