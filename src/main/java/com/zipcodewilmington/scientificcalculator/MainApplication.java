@@ -76,12 +76,12 @@ public class MainApplication {
                     result=CalculatorOperator.exponents(i,d);
                     Console.println(Double.toString(result));
                     break;
-                case "inverse":
+                case "inv":
                     i = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.multiplicativeInverse(i);
                     Console.println(Double.toString(result));
                     break;
-                case "negation":
+                case "neg":
                     i = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.additiveInverse(i);
                     Console.println(Double.toString(result));

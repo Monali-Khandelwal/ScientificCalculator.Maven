@@ -79,6 +79,38 @@ public class CalculatorOperator {
         return factorial;
     }
 
+    // TRIGONOMETRIC FUNCTIONS
+
+    public static double sine (double a) {
+        double sine = Math.sin(a);
+        return sine;
+    }
+
+    public static double cosine (double a) {
+        double cosine = Math.cos(a);
+        return cosine;
+    }
+
+    public static double tangent (double a) {
+        double tangent = Math.tan(a);
+        return tangent;
+    }
+
+    public static double arcSine (double a) {
+        double arcSine = Math.asin(a);
+        return arcSine;
+    }
+
+    public static double arcCos (double a) {
+        double arcCos = Math.acos(a);
+        return arcCos;
+    }
+
+    public static double arcTan (double a) {
+        double arcTan = Math.atan(a);
+        return arcTan;
+    }
+
 
 
 

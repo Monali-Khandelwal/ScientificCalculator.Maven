@@ -86,7 +86,7 @@ unable to display values less then zero.*/
         println("sq     Will calculate the square of a number");
         println("sqrt   Will calculate the square root of a number");
         println("expo   Will calculate the first input to the power of the second");
-        println("inverse     Will calculate the value of 1 divided by the input");
-        println("negation    Will calculate the input multiplied by -1");
+        println("inv     Will calculate the value of 1 divided by the input");
+        println("neg    Will calculate the input multiplied by -1");
     }
 }

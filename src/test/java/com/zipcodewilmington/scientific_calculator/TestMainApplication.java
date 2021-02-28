@@ -79,6 +79,39 @@ public class TestMainApplication {
     public void factorialTest() {
         Assertions.assertEquals(120, CalculatorOperator.factorial(5));
     }
+
+    // TRIG TESTS
+    @Test
+    public void sinTest() {
+        Assertions.assertEquals(-0.27941549819892586, CalculatorOperator.sine(6));
+    }
+
+    @Test
+    public void cosTest() {
+        Assertions.assertEquals(0.9074467814501962, CalculatorOperator.cosine(13));
+    }
+
+    @Test
+    public void tangentTest() {
+        Assertions.assertEquals(-0.45231565944180985, CalculatorOperator.tangent(9));
+    }
+
+    @Test
+    public void arcsinTest() {
+        Assertions.assertEquals(1.5707963267948966, CalculatorOperator.arcSine(1));
+    }
+
+    @Test
+    public void arccosTest() {
+        Assertions.assertEquals(1.0471975511965979, CalculatorOperator.arcCos(0.5));
+    }
+
+    @Test
+    public void arctanTest() {
+        Assertions.assertEquals(0.7853981633974483, CalculatorOperator.arcTan(1));
+    }
+
+
 }
 
 
