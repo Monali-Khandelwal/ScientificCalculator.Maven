@@ -76,8 +76,8 @@ public class TestMainApplication {
         Assertions.assertEquals(2.718281828459045 , CalculatorOperator.inverseNaturalLog(1));
     }
     @Test
-    public void PowFunction() {
-        Assertions.assertEquals(5.0, CalculatorOperator.inverseNaturalLog(5));
+    public void factorialTest() {
+        Assertions.assertEquals(120, CalculatorOperator.factorial(5));
     }
 }
 
