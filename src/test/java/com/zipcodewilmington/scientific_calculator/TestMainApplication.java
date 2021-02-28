@@ -54,6 +54,31 @@ public class TestMainApplication {
     public void additiveInverseTest() {
         Assertions.assertEquals(4, CalculatorOperator.additiveInverse(-4));
     }
+
+    // TESTS FOR JUSTIN"S METHODS
+    @Test
+    public void logarithmTest() {
+        Assertions.assertEquals(1.0791812460476249, CalculatorOperator.logarithm(12));
+    }
+
+    @Test
+    public void inverseLog() {
+        Assertions.assertEquals(100 , CalculatorOperator.inverseLog(2));
+    }
+
+    @Test
+    public void naturalLog() {
+        Assertions.assertEquals(2.4849066497880004 , CalculatorOperator.naturalLog(12));
+    }
+
+    @Test
+    public void inverseNaturalLog() {
+        Assertions.assertEquals(2.718281828459045 , CalculatorOperator.inverseNaturalLog(1));
+    }
+    @Test
+    public void PowFunction() {
+        Assertions.assertEquals(5.0, CalculatorOperator.inverseNaturalLog(5));
+    }
 }
 
 

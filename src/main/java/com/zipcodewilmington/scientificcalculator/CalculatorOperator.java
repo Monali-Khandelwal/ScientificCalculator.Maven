@@ -49,6 +49,38 @@ public class CalculatorOperator {
         double additiveInverse = a * -1;
         return additiveInverse;
     }
+    //JUSTIN"S LOG AND FACTORIAL METHODS
+
+    public static double logarithm (double a) {
+        double logarithm = Math.log10(a);
+        return logarithm;
+    }
+
+    public static double inverseLog (double a) {
+        double inverseLog = Math.pow(10, a);
+        return inverseLog;
+    }
+
+    public static double naturalLog (double a) {
+        double naturalLog = Math.log(a);
+        return naturalLog;
+    }
+
+    public static double inverseNaturalLog (double a) {
+        double inverseNaturalLog = Math.pow(Math.exp(1),a);
+        return inverseNaturalLog;
+    }
+
+    public static double factorial (double a) {
+        double factorial = 1;
+        for (int i = 1; i <= a; i++) {
+            factorial *= i;
+        }
+        return factorial;
+    }
+
+
+
 
     //necessary methods for the M key, rest handled in main app -- Abe.
     public static double memAdd(double a, double memory)
