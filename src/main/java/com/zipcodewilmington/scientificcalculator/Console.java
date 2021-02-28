@@ -18,12 +18,15 @@ public class Console {
     }
 
     public static String getStringInput(String prompt) {
+        char ch;
         prompt = "0"; // assigned Zero to Prompt variable before taking user input
         Scanner scanner = new Scanner(System.in);
         println(prompt);
         Console.println("Please enter the operator: ");
-        String userInput = scanner.nextLine(); // Read the operator from the user
-        return userInput;
+        String userInput = scanner.nextLine(); // Read the operator from the user*
+        ch = userInput.charAt(0); // This will just take the first operator from the user if user enters more than one oeprator.
+        prompt = (String.valueOf(ch));// This will convert character to string before storing it back in prompt variable.
+        return prompt;
     }
 
     public static Integer getIntegerInput(String prompt) {

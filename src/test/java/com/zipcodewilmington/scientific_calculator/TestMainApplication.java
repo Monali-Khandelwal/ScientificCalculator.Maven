@@ -26,15 +26,16 @@ public class TestMainApplication {
     }
 
     @Test
-    public void division1() {
+    public void division() {
         Assertions.assertEquals(1 , CalculatorOperator.division(22, 22));
-    }
-
-    @Test
-    public void division2() {
         Assertions.assertEquals(0, CalculatorOperator.division(9, 0));
     }
-
+    @Test
+    public void percentage () {
+        Assertions.assertEquals(25.00, CalculatorOperator.percentage(25, 100));
+        Assertions.assertEquals(50.00, CalculatorOperator.percentage(9, 18));
+        Assertions.assertEquals(33.00, CalculatorOperator.percentage(9, 27));
+    }
     @Test
     public void squareTest() {
         Assertions.assertEquals(9 , CalculatorOperator.square(3));

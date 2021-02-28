@@ -31,6 +31,11 @@ public class CalculatorOperator {
             return divide;
 }
 
+    public static double percentage (double num1, double num2){
+        double percent = (num1/num2) * 100;
+        return percent;
+    }
+
     public static double square (double a) {
         double square = Math.pow(a,2);
         return square;

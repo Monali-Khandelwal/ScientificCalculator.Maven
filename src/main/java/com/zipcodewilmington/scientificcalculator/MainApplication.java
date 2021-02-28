@@ -9,6 +9,7 @@ public class MainApplication {
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");
         String operator = Console.getStringInput("Enter a Operator:");
+
         double num1 = Console.getIntegerInput("Enter the first number:");
         double num2 = Console.getDoubleInput("Enter the second number:");
 
@@ -16,8 +17,8 @@ public class MainApplication {
         Console.println("The user input %s as a first number", num1);
         Console.println("The user input %s as a second number", num2);
 
-        //double c = calculator(operator,num1,num2 );
-        //Console.println("The Output is %s ", c);
+        double output = calculator(operator,num1,num2 );
+        Console.println("The result of your operation is %.2f ", output);
     }
 
     public static double calculator (String operator, double num1, double num2) {
@@ -34,6 +35,9 @@ public class MainApplication {
                     break;
                 case "/":
                     result = CalculatorOperator.division(num1,num2);
+                    break;
+                case "%":
+                    result = CalculatorOperator.percentage(num1,num2);
                     break;
                 default:
                     Console.println("Not a valid Operator");
