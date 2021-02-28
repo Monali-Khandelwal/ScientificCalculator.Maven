@@ -85,6 +85,62 @@ public class MainApplication {
                     i = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.additiveInverse(i);
                     Console.println(Double.toString(result));
+                    break;
+                case "log":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.logarithm(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "-log":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.inverseLog(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "ln":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.naturalLog(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "-ln":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.inverseNaturalLog(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "!":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.factorial(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "sin":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.sine(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "cos":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.cosine(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "tan":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.tangent(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "asin":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.arcSine(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "acos":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.arcCos(i);
+                    Console.println(Double.toString(result));
+                    break;
+                case "atan":
+                    i = Console.getDoubleInput("Enter a double");
+                    result=CalculatorOperator.arcTan(i);
+                    Console.println(Double.toString(result));
+                    break;
                 case "help":
                     Console.helpDoc();
                     break;

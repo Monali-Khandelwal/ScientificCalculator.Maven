@@ -88,5 +88,16 @@ unable to display values less then zero.*/
         println("expo   Will calculate the first input to the power of the second");
         println("inv     Will calculate the value of 1 divided by the input");
         println("neg    Will calculate the input multiplied by -1");
+        println("log    Will calculate the logarithm of the input");
+        println("-log    Will calculate the inverse logarithm of the input");
+        println("ln    Will calculate the natural logarithm of the input");
+        println("-ln    Will calculate the inverse natural logarithm of the input");
+        println("!    Will calculate the factorial of a number");
+        println("sin    Will calculate sine given the input");
+        println("cos    Will calculate cosine given the input");
+        println("tan    Will calculate tangent given the input");
+        println("asin    Will calculate arcsine given the input");
+        println("acos    Will calculate arccosine given the input");
+        println("atan    Will calculate arctangent given the input");
     }
 }
