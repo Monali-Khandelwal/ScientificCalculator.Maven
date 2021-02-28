@@ -61,6 +61,5 @@ public class CalculatorOperator {
         memory-=a;
         return memory;
     }
-
 }
 

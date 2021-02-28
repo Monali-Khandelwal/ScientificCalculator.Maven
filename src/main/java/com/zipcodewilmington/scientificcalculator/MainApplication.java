@@ -7,7 +7,7 @@ public class MainApplication {
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");
 //Initial command is entered here, along with initial value of numeric input and memory
-        String s=Console.getStringInput("Enter an command:");
+        String s=Console.getStringInput("Enter a command:");
         double memory=0.0;
         double i = 0.0;
 //q is calculator quit command, will keep prompting for commands until q is entered
@@ -38,32 +38,32 @@ public class MainApplication {
                     break;
                 case "+":
                     i = Console.getDoubleInput("Enter a double");
-                    d = Console.getDoubleInput("Enter a double.");
+                    d = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.addition(i, d);
                     Console.println(Double.toString(result));
                     break;
                 case "-":
                     i = Console.getDoubleInput("Enter a double");
-                    d = Console.getDoubleInput("Enter a double.");
+                    d = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.subtraction(i, d);
                     Console.println(Double.toString(result));
                     break;
                 case "*":
                     i = Console.getDoubleInput("Enter a double");
-                    d = Console.getDoubleInput("Enter a double.");
+                    d = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.multiplication(i, d);
                     Console.println(Double.toString(result));
                     break;
                 case "/":
                     i = Console.getDoubleInput("Enter a double");
-                    d = Console.getDoubleInput("Enter a double.");
+                    d = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.division(i, d);
                     Console.println(Double.toString(result));
                     break;
                 case "sq":
                     i = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.square(i);
-                Console.println(Double.toString(result));
+                    Console.println(Double.toString(result));
                     break;
                 case "sqrt":
                     i = Console.getDoubleInput("Enter a double");
@@ -72,7 +72,7 @@ public class MainApplication {
                     break;
                 case "expo":
                     i = Console.getDoubleInput("Enter a double");
-                    d = Console.getDoubleInput("Enter a double.");
+                    d = Console.getDoubleInput("Enter a double");
                     result=CalculatorOperator.exponents(i,d);
                     Console.println(Double.toString(result));
                     break;
