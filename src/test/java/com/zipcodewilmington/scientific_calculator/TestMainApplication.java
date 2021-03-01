@@ -118,7 +118,13 @@ public class TestMainApplication {
         Assertions.assertEquals(0.7853981633974483, CalculatorOperator.arcTan(1));
     }
 
-
+    @Test
+    public void memTest() {
+        Assertions.assertEquals(26.3, CalculatorOperator.memAdd(5,21.3));
+        Assertions.assertEquals(85.9, CalculatorOperator.memAdd(-2,87.9));
+        Assertions.assertEquals(3.23, CalculatorOperator.memSub(5.42,8.65));
+        Assertions.assertEquals(-3, CalculatorOperator.memSub(5,2));
+    }
 }
 
 

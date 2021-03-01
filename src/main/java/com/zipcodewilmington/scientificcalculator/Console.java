@@ -8,9 +8,6 @@ import java.util.Scanner;
  * Created by leon on 2/9/18.
  */
 public class Console {
-    public String currentMode="Decimal";
-    //placeholder variable for for the number currently input into the calc
-    public int a=0;
     public static void print(String output, Object... args) {
         System.out.printf(output, args);
     }
@@ -20,18 +17,10 @@ public class Console {
     }
 
     public static String getStringInput(String prompt) {
-        Char ch;
-        prompt = "0";
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        Console.println("Please enter the operator: ");
-        // Read the operator from the user*
         String userInput = scanner.nextLine();
-        // This will just take the first operator from the user if user enters more than one oeprator.
-        ch = userInput.charAt(0);
-        // This will convert character to string before storing it back in prompt variable.
-        prompt = (String.valueOf(ch));
-        return prompt;
+        return userInput;
     }
 
     public static Integer getIntegerInput(String prompt) {
@@ -54,39 +43,39 @@ public class Console {
     /*switches the current display mode to the next from smallest to largest.
 WARNING: Display modes other then decimal will cause the calculator to be
 unable to display values less then zero.*/
-    public void switchDisplayMode(){
-
-        if (currentMode.equals("decimal")){
-            currentMode="hexadecimal";
+    public static String switchDisplayMode(double i, String mode){
+        int a = (int)i;
+        if (mode.equals("decimal")){
             println(Integer.toHexString(a));
-        }else if(currentMode.equals("hexadecimal")){
-            currentMode="binary";
+            return "hexadecimal";
+        }else if(mode.equals("hexadecimal")){
             println(Integer.toBinaryString(a));
-        }else if(currentMode.equals("binary")){
-            currentMode="octal";
+            return "binary";
+        }else if(mode.equals("binary")){
             println(Integer.toOctalString(a));
-        }else if(currentMode.equals("octal")){
-            currentMode="decimal";
+            return "octal";
+        }else if(mode.equals("octal")){
             println(Integer.toString(a));
+            return "decimal";
         }
+        return "";
     }
     //alternate switch display statement that lets the user manually change the display mode.
-    public void switchDisplayMode(String mode){
+    public static void directDisplayMode(String mode, double i){
+        int a = (int)i;
         if (mode.equalsIgnoreCase("decimal")) {
-            currentMode="decimal";
             println(Integer.toString(a));
         }else if (mode.equalsIgnoreCase("octal")) {
-            currentMode="octal";
             println(Integer.toOctalString(a));
         }else if (mode.equalsIgnoreCase("binary")) {
-            currentMode="binary";
             println(Integer.toBinaryString(a));
-        }else if (mode.equalsIgnoreCase("hexadecimal")) {
-            currentMode="hexadecimal";
+        }else if (mode.equalsIgnoreCase("hexadecimal")){
             println(Integer.toHexString(a));
         }else
             println("Invalid command. Please pick binary, octal, decimal, or hexadecimal");
     }
+    //A help method to bring up a list of commands --AF
+    //ryan I love you for adding to this for me and savimg me some work --AF
     public static void helpDoc(){
         println("q      Will exit the calculator");
         println("+      Will add two numbers");
