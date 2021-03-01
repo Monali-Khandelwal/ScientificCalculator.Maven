@@ -127,12 +127,14 @@ public class CalculatorOperator {
     public static double memAdd(double a, double memory)
     {
         memory+=a;
-        return memory;
+        double roundedMemory=Math.round(memory * 100.0) / 100.0;
+        return roundedMemory;
     }
     public static double memSub(double a, double memory)
     {
         memory-=a;
-        return memory;
+        double roundedMemory=Math.round(memory * 100.0) / 100.0;
+        return roundedMemory;
     }
 }
 
