@@ -30,11 +30,11 @@ public class MainApplication {
                     break;
                 case "M+":
                     i = Console.getDoubleInput("Enter a value to add to memory");
-                    CalculatorOperator.memAdd(i, memory);
+                    memory=CalculatorOperator.memAdd(i, memory);
                     break;
                 case "M-":
                     i = Console.getDoubleInput("Enter a value to subtract from memory");
-                    CalculatorOperator.memSub(i, memory);
+                    memory =CalculatorOperator.memSub(i, memory);
                     break;
                 case "M":
                     Console.println(Double.toString(memory));
