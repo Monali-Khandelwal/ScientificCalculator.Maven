@@ -20,15 +20,24 @@ public class Console {
     }
 
     public static String getStringInput(String prompt) {
+        Char ch;
+        prompt = "0";
         Scanner scanner = new Scanner(System.in);
         println(prompt);
+        Console.println("Please enter the operator: ");
+        // Read the operator from the user*
         String userInput = scanner.nextLine();
-        return userInput;
+        // This will just take the first operator from the user if user enters more than one oeprator.
+        ch = userInput.charAt(0);
+        // This will convert character to string before storing it back in prompt variable.
+        prompt = (String.valueOf(ch));
+        return prompt;
     }
 
     public static Integer getIntegerInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
+        // Read the first number from the user
         int userInput = scanner.nextInt();
         return userInput;
     }
@@ -36,6 +45,7 @@ public class Console {
     public static Double getDoubleInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
+        // Read the second number from the user
         double userInput = scanner.nextDouble();
         return userInput;
     }

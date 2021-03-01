@@ -4,25 +4,34 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class CalculatorOperator {
 
-    public static double addition (double a, double b) {
-        double addition = a + b;
-        return addition;
+    public static double addition (double num1, double num2) {
+        double add = num1 + num2;
+        return add;
     }
 
     public static double subtraction
-            (double a, double b) {
-        double subtraction = a - b;
-        return subtraction;
+            (double num1, double num2) {
+        double subtract = num1 - num2;
+        return subtract;
     }
 
-    public static double multiplication (double a, double b) {
-        double multiplication = a * b;
-        return multiplication;
+    public static double multiplication (double num1, double num2) {
+        double multiply = num1 * num2;
+        return multiply;
     }
 
-    public static double division (double a, double b) {
-        double division = a / b;
-        return division;
+    public static double division (double num1, double num2){
+        double divide=0;
+        if (num2 == 0)
+            Console.println("Error");
+        else
+            divide = num1/num2;
+        return divide;
+    }
+
+    public static double percentage (double num1, double num2){
+        double percent = (num1/num2) * 100;
+        return percent;
     }
 
     public static double square (double a) {

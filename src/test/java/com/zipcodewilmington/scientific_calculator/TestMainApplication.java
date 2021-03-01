@@ -27,7 +27,14 @@ public class TestMainApplication {
 
     @Test
     public void division() {
-        Assertions.assertEquals(1, CalculatorOperator.division(22, 22));
+        Assertions.assertEquals(1 , CalculatorOperator.division(22, 22));
+        Assertions.assertEquals(0, CalculatorOperator.division(9, 0));
+    }
+    @Test
+    public void percentage () {
+        Assertions.assertEquals(25.00, CalculatorOperator.percentage(25, 100));
+        Assertions.assertEquals(50.00, CalculatorOperator.percentage(9, 18));
+        Assertions.assertEquals(33.00, CalculatorOperator.percentage(9, 27));
     }
 
     @Test
