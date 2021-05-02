@@ -10,13 +10,11 @@ Your team should work on this project in a single repository. Click the `fork` b
 Then, each of the other team members should clone from the shared repository. You may want to dived the work into various classes, where each person takes responsibility for a whole class. 
 
 ## Contributors
-  Monali Khandelwal (@Monali-Khandelwal)
-  Ryan Hufford
-  Justin Banks
-  Abiel Figueroa
-  Ashley Smart
-  Justin Banks
-  
+•	Monali Khandelwal (@Monali-Khandelwal) 
+•	Ryan Hufford 
+•	Justin Banks 
+•	Abiel Figueroa 
+•	Ashley Smart Justin Banks
 
 ## Requirements
 
